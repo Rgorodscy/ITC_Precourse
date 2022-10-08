@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link href="../css/style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <section class="page-wrapper">
+    <h1>Contact</h1>
+    <div>
+      <form action="https://formspree.io/f/moqbvjdd" method="POST" id="form">
+        <label>
+          Your First Name:
+          <input id="first-name" type="text" name="first-name" required>
+        </label>
+        <label>
+          Your Last Name:
+          <input id="last-name" type="text" name="last-name">
+        </label>
+        <label>
+          Your Email:
+          <input id="email" type="email" name="email" required>
+        </label>
+        <label>
+          Your Mobile Phone:
+          <input id="phone" type="tel" name="phone" required>
+        </label>
+        <label>
+          Your Message:
+          <textarea id="message" name="message" required></textarea>
+        </label>
+        <label>
+          How do you want to be contacted?
+          <select required id="contact-type">
+            <option selected hidden>Please select one...</option>
+            <option value="phone">Phone</option>
+            <option value="email">Email</option>
+          </select>
+        </label>
+        <button id="submit-button" type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+  <footer>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul>
+    <div>
+      <p id="buildSentence"></p>
+    </div>
+  </footer>
+  <script src="../js/footer.js"></script>
+  <script src="../js/contact.js"></script>
+</body>
+
+</html>
